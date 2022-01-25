@@ -111,7 +111,7 @@
                 <!-- formulario - descricao lateral -->
                 <div class="bg-white rounded-md shadow-md p-3 text-gray-800 space-x-5 flex flex-row">
                     <div class="w-40">
-                        <h3 class="text-lg font-bold text-center">Formulário 1</h3>
+                        <h3 class="text-lg font-bold text-center">Formulário 2</h3>
                         <p class="mt-3 text-gray-500 indent-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error accusamus distinctio placeat omnis quidem fugiat vel nobis possimus. Sequi enim maiores asperiores vitae similique nihil alias ratione impedit reiciendis. Aliquid.</p>
                     </div>
                     <div class="flex-1">
@@ -177,6 +177,109 @@
                             <fieldset class="flex items-top">
                                 <legend class="font-bold bg-white text-blue-900"><label for="obs_2">Campo textarea</label></legend>
                                 <textarea name="obs_2" id="obs_2" cols="30" rows="3" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded"></textarea>
+                            </fieldset>
+                            
+                            <!-- submit alinhado esquerda formulario -->
+                            <!-- <div class="flex items-center justify-start">
+                                <input type="submit" value="Submit" class="rounded mt-3 px-5 py-1 bg-blue-500 border border-blue-600 text-white font-bold shadow-lg hover:bg-blue-600 hover:shadow-none cursor-pointer focus:outline-none">
+                            </div> -->
+
+                            <!-- submit alinhado centro formulario -->
+                            <!-- <div class="flex items-center justify-center">
+                                <input type="submit" value="Submit" class="rounded mt-3 px-5 py-1 bg-blue-500 border border-blue-600 text-white font-bold shadow-lg hover:bg-blue-600 hover:shadow-none cursor-pointer focus:outline-none">
+                            </div> -->
+
+                            <!-- submit alinhado direita formulario -->
+                            <div class="flex items-center justify-end">
+                                <input type="submit" value="Submit" class="rounded mt-3 px-5 py-1 bg-blue-500 border border-blue-600 text-white font-bold shadow-lg hover:bg-blue-600 hover:shadow-none cursor-pointer focus:outline-none">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- formulario - topicos -->
+                <div class="bg-white rounded-md shadow-md p-3 text-gray-800 space-y-5 flex flex-col">
+                    <div class="">
+                        <h3 class="text-lg font-bold text-center">Formulário 3</h3>
+                    </div>
+                    <div class="flex-1">
+                        <form action="" method="post" class="space-y-2 text-gray-500">
+
+                            <div>
+                                <h4 class="font-bold text-center">Informações tópico 1</h4>
+                                <p class="indent-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <fieldset class="flex items-center">
+                                <legend class="font-medium bg-white text-blue-900"><label for="texto_3">Campo text</label></legend>
+                                <input type="text" name="texto_3" id="texto_3" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded" >
+                            </fieldset>
+                            <fieldset class="flex items-center">
+                                <legend class="font-medium bg-white text-blue-900"><label for="email_3">Campo email</label></legend>
+                                <input type="email" name="email_3" id="email_3" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded invalid:text-red-400" >
+                            </fieldset>
+                            <fieldset class="flex items-center">
+                                <legend class="font-medium bg-white text-blue-900"><label for="data_3">Campo date</label></legend>
+                                <input type="date" name="data_3" id="data_3" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded" >
+                            </fieldset>
+                            <fieldset class="flex items-center">
+                                <legend class="font-medium bg-white text-blue-900"><label for="senha_3">Campo password</label></legend>
+                                <input type="password" name="senha_3" id="senha_3" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded" >
+                            </fieldset>
+                            
+                            <div class="pt-5">
+                                <h4 class="font-bold text-center">Informações tópico 2</h4>
+                                <p class="indent-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <fieldset class="flex items-center">
+                                <legend class="font-medium bg-white text-blue-900"><label for="numero_3">Campo number</label></legend>
+                                <input type="number" name="numero_3" id="numero_3" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded out-of-range:border-red-400" min="1" max="100" >
+                            </fieldset>
+                            <fieldset class="flex items-center">
+                                <legend class="font-medium bg-white text-blue-900"><label for="arquivo_3">Campo file</label></legend>
+                                <input type="file" name="arquivo_3" id="arquivo_3" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded" accept="image/png, image/jpeg">
+                            </fieldset>
+                            <fieldset class="flex items-center">
+                                <legend class="font-medium bg-white text-blue-900"><label for="selecao_3">Campo select</label></legend>
+                                <select name="selecao_3" id="selecao_3" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded" >
+                                    <option value="1" selected>Opcao 1</option>
+                                    <option value="2">Opcao 2</option>
+                                    <option value="3">Opcao 3</option>
+                                </select>
+                            </fieldset>
+
+                            <div class="pt-5">
+                                <h4 class="font-bold text-center">Informações tópico 3</h4>
+                                <!-- <p class="indent-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                            <fieldset class="flex items-center">
+                                <legend class="font-medium bg-white text-blue-900">Campo radio</legend>
+                                <div class="flex flex-1 space-x-2 py-1 pl-3">
+                                    <div class="flex flex-1 items-center">
+                                        <label for="rad1_3" class="pr-2">Valor 1</label>
+                                        <input type="radio" name="rad_3" id="rad1_3" value="1" class="w-5 h-5 outline-none" checked>
+                                    </div>
+                                    <div class="flex flex-1 items-center">
+                                        <label for="rad2_3" class="pr-2">Valor 2</label>
+                                        <input type="radio" name="rad_3" id="rad2_3" value="2" class="w-5 h-5 outline-none" >
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="flex items-center">
+                                <legend class="font-medium bg-white text-blue-900">Campo checkbox</legend>
+                                <div class="flex flex-1 space-x-2 py-1 pl-3">
+                                    <div class="flex flex-1 items-center">
+                                        <label for="check1_3" class="pr-2">Valor 1</label>
+                                        <input type="checkbox" name="check_3" id="check1_3" value="1" class="w-5 h-5 outline-none" checked>
+                                    </div>
+                                    <div class="flex flex-1 items-center">
+                                        <label for="check2_3" class="pr-2">Valor 2</label>
+                                        <input type="checkbox" name="check_3" id="check2_3" value="2" class="w-5 h-5 outline-none" >
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="flex items-top">
+                                <legend class="font-medium bg-white text-blue-900"><label for="obs_3">Campo textarea</label></legend>
+                                <textarea name="obs_3" id="obs_3" cols="30" rows="3" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded"></textarea>
                             </fieldset>
                             
                             <!-- submit alinhado esquerda formulario -->
