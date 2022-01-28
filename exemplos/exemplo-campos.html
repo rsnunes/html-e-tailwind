@@ -103,6 +103,14 @@
                                 <legend class="font-bold bg-white text-blue-900"><label for="email_1" class="">Campo email</label></legend>
                                 <input type="email" name="email_1" id="email_1" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded invalid:border-red-500" >
                             </fieldset>
+
+                            <div class="pt-4">
+                                <p class="indent-6">Valor inválido: <span class="text-green-600 text-lg italic">invalid: + focus:invalid:</span></p>
+                            </div>
+                            <fieldset class="flex items-center">
+                                <legend class="font-bold bg-white text-blue-900"><label for="email_2" class="">Campo email</label></legend>
+                                <input type="email" name="email_2" id="email_2" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded invalid:border-red-500 focus:invalid:bg-red-100 focus:invalid:border-red-500" >
+                            </fieldset>
                             
                         </div>
                     </div>
@@ -140,9 +148,45 @@
                                 <p class="indent-6">Msg valor inválido: <span class="text-green-600 text-lg italic">peer: + peer-invalid:</span></p>
                             </div>
                             <fieldset class="flex items-center">
-                                <legend class="font-bold bg-white text-blue-900"><label for="email_2" class="">Campo email</label></legend>
-                                <input type="email" name="email_2" id="email_2" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded peer" >
+                                <legend class="font-bold bg-white text-blue-900"><label for="email_3" class="">Campo email</label></legend>
+                                <input type="email" name="email_3" id="email_3" class="flex-1 border border-blue-900 bg-white px-3 py-1 outline-none focus:border-blue-700 focus:text-blue-700 rounded peer" >
                                 <span class="invisible inline-flex text-red-500 italic text-sm p-1 peer-invalid:visible">Valor inválido</span>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- checkbox / radio -->
+                <div class="bg-white rounded-md shadow-md p-3 text-gray-800 space-y-5 flex flex-col">
+                    <div>
+                        <h3 class="text-lg font-bold">Estados campo checkbox / radio</h3>
+                    </div>
+                    <div class="flex-1">
+                        <div  class="space-y-2 text-gray-500">
+
+                            <div class="">
+                                <p class="indent-6">Classe individual ou combinada: <span class="text-green-600 text-lg italic">checked: / indeterminate: / default:</span></p>
+                            </div>
+                            <fieldset class="flex items-center">
+                                <legend class="font-bold bg-white text-blue-900"><label for="" class="">Campo checkbox / radio</label></legend>
+                                <div class="h-6 flex items-center">
+                                    <input type="checkbox" name="check_1" id="check_1" class="appearance-none h-5 w-5 bg-gray-300 checked:bg-blue-500 checked:h-6 checked:w-6 transition-all rounded" >
+                                    <input type="radio" name="rad_1" id="rad_1" class="ml-5 appearance-none h-5 w-5 bg-gray-300 checked:bg-blue-500 checked:h-6 checked:w-6 transition-all rounded-full" >
+                                    <input type="radio" name="rad_1" id="rad_2" class="ml-5 appearance-none h-5 w-5 bg-gray-300 checked:bg-blue-500 checked:h-6 checked:w-6 transition-all rounded-full" >
+                                </div>
+                            </fieldset>
+
+                            <div class="pt-4">
+                                <p class="indent-6">Selecionado e personalizado (<a href="https://unicode-table.com/en/" class="text-blue-600 underline text-sm italic" target="_blank">unicodes</a>): <span class="text-green-600 text-lg italic">checked: + after:</span></p>
+                            </div>
+                            <fieldset class="flex items-center">
+                                <legend class="font-bold bg-white text-blue-900"><label for="" class="">Campo checkbox / radio</label></legend>
+                                <div class="h-6 flex items-center">
+                                    <input type="checkbox" name="check_2" id="check_2" class="appearance-none h-5 w-5 bg-gray-300 checked:bg-blue-500 checked:h-6 checked:w-6 transition-all rounded checked:after:content-['\1F5F8'] text-white text-lg font-bold text-center outline-none" >
+                                    <input type="radio" name="rad_2" id="rad_3" class="ml-5 appearance-none h-5 w-5 bg-gray-300 checked:bg-blue-500 checked:h-6 checked:w-6 checked:after:content-['\25CF'] text-white after:text-2xl after:align-center after:-mt-1 font-bold text-center  transition-all rounded-full inline-flex items-center justify-center outline-none" >
+                                    <input type="radio" name="rad_2" id="rad_4" class="ml-5 appearance-none h-5 w-5 bg-gray-300 checked:bg-blue-500 checked:h-6 checked:w-6 checked:after:content-['\25CF'] text-white after:text-2xl after:align-center after:-mt-1 font-bold text-center  transition-all rounded-full inline-flex items-center justify-center outline-none" >
+                                </div>
                             </fieldset>
 
                         </div>
