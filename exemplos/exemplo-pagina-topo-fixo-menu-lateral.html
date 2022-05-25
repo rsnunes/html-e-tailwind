@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Página - topo fixado com menu no topo</title>
+    <title>Página - topo fixado e menu lateral</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-screen bg-gray-500 text-white">
     <div class="h-full flex flex-col">
-        <header class="bg-gray-700 shadow z-20 fixed max-w-full w-full h-28 bg-opacity-90 border-b border-t border-gray-700 flex flex-col">
-            <section class="container mx-auto flex-1">
+        <header class="bg-gray-700 shadow z-20 fixed max-w-full w-full h-16 bg-opacity-80 border-b border-t border-gray-700">
+            <section class="container mx-auto h-full">
                 <div class="flex h-full items-center">
-                    <h1 class="flex-1 text-xl text-center">Página - topo e menu fixado</h1>
+                    <h1 class="flex-1 text-xl text-center">Página - topo fixado e menu lateral</h1>
                 </div>
             </section>
-            <nav class="w-full max-w-full bg-gray-700 px-5 py-2 shadow-inner">
-                <div class="container mx-auto">Menu</div>
-            </nav>
         </header>
-        <main class="flex-1 py-8 mt-28 relative z-10 bg-gray-500">
-            <section class="container mx-auto">
+        <main class="flex-1 mt-16 relative bg-gray-500 flex flex-row">
+            <aside class="w-48 bg-gray-600 border-r border-gray-700 py-8 px-5">
+                Menu
+            </aside>
+            <section class="py-8 px-5 flex-1">
                 <article class="space-y-10">
                     <div class="text-lg">
                         Conteúdo
@@ -48,7 +48,7 @@
                 </article>
             </section>
         </main>
-        <footer class="bg-gray-900 relative z-10 border-t border-gray-400">
+        <footer class="bg-gray-900 relative border-t border-gray-400">
             <section class="container mx-auto py-2 px-3">
                 <article class="">
                     Rodapé
